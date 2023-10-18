@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+    </body>
+        
+        
+        
+        <referenceContainer name="main">
+            <container name = "home-page">
+                <block class="Magento\Framework\View\Element\Template" name="hero-banner" template="Magento_Theme::html/hero-banner.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="feature" template="Magento_Theme::html/feature.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="top-category" template="Magento_Theme::html/top-category.phtml">
+                    <arguments>
+                            <argument name="top-categories" xsi:type="string">Top Categories Of The Month</argument>
+                    </arguments>
+                    
+                </block>
+                <block class="Magento\Framework\View\Element\Template" name="product-card" template="Magento_Theme::html/product-card.phtml">
+                </block>
+                <block class="Magento\Framework\View\Element\Template" name="banners" template="Magento_Theme::html/banners.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="seller" template="Magento_Theme::html/seller.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="banner-family" template="Magento_Theme::html/banner-family.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="seller1" template="Magento_Theme::html/seller1.phtml">
+                    <arguments>
+                            <argument name="Cirtus Juicer" xsi:type="string">Cirtus Juicer</argument>
+                            <argument name="Blender" xsi:type="string">Blender</argument>
+                            <argument name="Eletric Oven" xsi:type="string">Eletric Oven</argument>
+                            <argument name="Air Purifier" xsi:type="string">Air Purifier</argument>
+                            <argument name="Air-Conditioner" xsi:type="string">Air-Conditioner</argument>
+                            <argument name="Refriregator" xsi:type="string">Refriregator</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Template" name="news" template="Magento_Theme::html/news.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="view-products" template="Magento_Theme::html/view-products.phtml"/>
+           </container>
+        </referenceContainer> 
+        
+    
+    
+</page>

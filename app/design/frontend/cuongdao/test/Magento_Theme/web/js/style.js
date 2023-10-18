@@ -1,7 +1,7 @@
 
 require(['jquery', 'slick'], function ($) {
     $(document).ready(function () {
-        $('.banner-left').slick({
+        $('.container-seller-1').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,

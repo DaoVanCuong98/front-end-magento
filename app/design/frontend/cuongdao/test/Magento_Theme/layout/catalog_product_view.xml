@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+       <referenceContainer name="product.info.extrahint" remove = "true" ></referenceContainer>
+       <referenceContainer name="product.info.options.wrapper" remove = "true" ></referenceContainer>
+       
+       <referenceContainer name="columns.top"  >
+             <container name="customize"  htmlTag="div" htmlClass="customize">
+             </container>
+       </referenceContainer>
+       <move element="product.info.review" destination="customize" before="-" />
+       <move element="product.info.sku" destination="customize" after="product.info.review" />
+       <move element="product.info.type" destination="product.info.main" after="product.price.tier"/>
+       
+       
+
+    </body>
+
+    
+</page>

@@ -1,3 +1,44 @@
-<div class="container">
-    <image src="<?php echo $block->getViewFileUrl('Magento_Theme::images/Top Categories.png'); ?>" alt="Mô tả ảnh" />
-</div>
+<!-- <div class="container-categories"> -->
+    <!-- <h1>Top Categories Of The Month </h1> -->
+    <h1><?= $block->getData('top-categories') ?></h1>
+    <div class="container-item-top">
+        <div class="item-category">
+            <image src="<?php echo $block->getViewFileUrl('Magento_Theme::images/Item-1.png'); ?>" alt="Mô tả ảnh" />
+        </div>
+        <div class="item-category">
+            <image src="<?php echo $block->getViewFileUrl('Magento_Theme::images/Item-2.png'); ?>" alt="Mô tả ảnh" />
+        </div>
+        <div class="item-category">
+            <image src="<?php echo $block->getViewFileUrl('Magento_Theme::images/Item-3.png'); ?>" alt="Mô tả ảnh" />
+        </div>
+    </div>
+    <div class="container-item-bottom">
+            <div class="item-category">
+                <image src="<?php echo $block->getViewFileUrl('Magento_Theme::images/Item-4.png'); ?>" alt="Mô tả ảnh" />
+            </div>
+            <div class="item-category">
+                <image src="<?php echo $block->getViewFileUrl('Magento_Theme::images/Item-5.png'); ?>" alt="Mô tả ảnh" />
+            </div>
+            <div class="item-category">
+                <image src="<?php echo $block->getViewFileUrl('Magento_Theme::images/Item-6.png'); ?>" alt="Mô tả ảnh" />
+            </div>
+        </div>
+    </div>
+
+
+
+<style>
+    .container-item-top {
+        display: flex;
+
+    }
+    .container-item-bottom {
+        display: flex;
+
+    }
+
+    .item-category {
+        margin: 10px 10px 10px 10px;
+       
+    }
+</style>

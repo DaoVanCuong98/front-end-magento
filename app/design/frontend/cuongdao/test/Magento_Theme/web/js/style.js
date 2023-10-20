@@ -1,13 +1,28 @@
 
-require(['jquery', 'slick'], function ($) {
-    $(document).ready(function () {
-        $('.container-seller-1').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            arrows: true,
-            isFinite: true,
-        });
+
+$(document).ready(function(){
+    $('.container-seller-1').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+      speed: 300,
+      infinite: true,
+      autoplaySpeed: 5000,
+      autoplay: true,
+      responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
     });
-});
+  });

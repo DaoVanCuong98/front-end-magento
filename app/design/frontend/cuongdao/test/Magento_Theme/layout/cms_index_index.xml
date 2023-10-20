@@ -5,9 +5,8 @@
     </body>
         
         
-        
-        <referenceContainer name="main">
-            <container name = "home-page">
+        <referenceContainer name="content">
+            
                 <block class="Magento\Framework\View\Element\Template" name="hero-banner" template="Magento_Theme::html/hero-banner.phtml"/>
                 <block class="Magento\Framework\View\Element\Template" name="feature" template="Magento_Theme::html/feature.phtml"/>
                 <block class="Magento\Framework\View\Element\Template" name="top-category" template="Magento_Theme::html/top-category.phtml">
@@ -33,8 +32,11 @@
                 </block>
                 <block class="Magento\Framework\View\Element\Template" name="news" template="Magento_Theme::html/news.phtml"/>
                 <block class="Magento\Framework\View\Element\Template" name="view-products" template="Magento_Theme::html/view-products.phtml"/>
-           </container>
+                
+
+           
         </referenceContainer> 
+        
         
     
     
